@@ -56,14 +56,7 @@ class App extends Component {
             {this.state.chirps.map((chirp) => {
               return (
                 <>
-                  <div className="py-1">
-                    <div className="card">
-
-                      <div className="card-body">
-                        <h3 className="card-title">{<ChirpCard chirps={chirp} />}</h3>
-                      </div>
-                    </div>
-                  </div>
+                  {<ChirpCard chirps={chirp} />}
                 </>
               )
             })}
